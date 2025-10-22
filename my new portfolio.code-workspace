@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/Inter,Poppins,Roboto,Roboto_Slab"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "my new portfolio"
+	}
+}

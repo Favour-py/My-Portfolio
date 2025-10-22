@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto_Slab/static/RobotoSlab-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    overflow-x: hidden;
+    background-image: url(copilot\ real1.png);
+}
+.logo{
+    margin-left: 85px;
+    margin-top: 80px;
+    display: flex;
+    width: 10vw;
+}
+.logo img{
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+}
+.head{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: -60px;
+}
+.projects-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+.first-project{
+    background-color: rgb(72,11,95);
+    width: 500px;
+    height: 130vh;
+    margin-left: 60px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.first-project :first-child{
+    display: block;
+    width: 450px;
+    height: 200px;
+    padding-left: 45px;
+    padding-top: 20px;
+}
+.first-project :nth-child(2){
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.first-project :nth-child(3){
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.first-project :nth-child(4){
+    display: block;
+    width: 450px;
+    height: 150px;
+    padding-left: 45px;
+    padding-top: 20px;
+}
+.foodi-1{
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-top: 0px;
+    background-color: rgb(43,0,61);
+    color: #fff;
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;
+}
+.foodi-1-text{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+.second-project{
+    background-color: rgb(72,11,95);
+    width: 500px;
+    height: 130vh;
+    margin-left: 30px;
+    margin-top: 60px;
+    border-radius: 10px;   
+}
+.second-project-content :first-child{
+    display: block;
+    width: 450px;
+    height: 200px;   
+}
+.second-project-content :nth-child(2){
+    display: block;
+    width: 450px;
+    height: 200px;
+    margin-top: 30px;
+}
+.second-project-content{
+    display: grid;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.second-project-title{
+    margin-left: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    background-color: rgb(43,0,61);
+    color: #fff;
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;   
+}
+.second-project-text{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 40px;
+}
+.third-project-images :first-child{
+    display: block;
+    width: 450px;
+    height: 200px;   
+}
+.t-wrap{
+    display: flex;
+    column-gap: 20px;
+    padding-left: 12px;
+}
+.t-wrap :nth-child(1){
+    display: block;
+    background-color: red;
+    width: 200px;
+    height: 100px;   
+}
+.t-wrap :nth-child(2){
+    display: block;
+    width: 200px;
+    height: 100px;   
+}
+.third-project-images :nth-child(3){
+    display: block;
+    width: 450px;
+    height: 200px; 
+}
+.third-project{
+    background-color: rgb(72,11,95);
+    width: 500px;
+    height: 215vh;
+    margin-left: 60px;
+    margin-top: 60px;
+    border-radius: 10px;  
+
+}
+.third-project-content{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.third-project-images{
+    display: grid;
+    row-gap: 20px;
+}
+.third-project-title{
+    margin-left: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    background-color: rgb(43,0,61);
+    color: #fff;
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;   
+}
+.third-project-text{
+    text-align: center;
+    padding-right: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 40px;
+}
+
+.fourth-project{
+    background-color: rgb(72,11,95);
+    width: 500px;
+    height: 215vh;
+    margin-left: 30px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.fourth-project-content{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.fourth-project-images{
+    display: grid;
+    row-gap: 20px;
+}
+.f1{
+    display: flex;
+    width: 450px;
+    height: 180px;   
+}
+.tt-wrap, .tt-wrap2{
+    display: flex;
+    padding-left: 0px;
+    column-gap: 10px;
+}
+.t1{
+    display: flex;
+    width: 220px;
+    height: 100px;   
+}
+.t2{
+    display: flex;
+    width: 220px;
+    height: 100px;   
+}
+.t3{
+    display: flex;
+    width: 220px;
+    height: 100px;   
+    margin-top: 120px;
+    margin-left: -460px;
+}
+.t4{
+    display: flex;
+    width: 220px;
+    height: 100px;   
+    margin-top: 120px;
+
+}
+.tt1{
+    display: flex;
+    width: 220px;
+    height: 100px;   
+}
+.tt2{
+    display: flex;
+    width: 220px;
+    height: 100px;   
+}
+.tt3{
+    display: flex;
+    width: 220px;
+    height: 100px;   
+    margin-top: 120px;
+    margin-left: -460px;
+}
+.tt4{
+    display: flex;
+    width: 220px;
+    height: 100px;   
+    margin-top: 120px;
+
+}
+.tt-last{
+    display: block;
+    width: 450px;
+    height: 200px; 
+}
+.fourth-project-title{
+    margin-left: 25px;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgb(43,0,61);
+    color: #fff;
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;   
+}
+.fourth-project-text{
+    text-align: center;
+    padding-right: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+
+
+/* media screen */
+
+@media screen and (max-width: 600px) {
+    body{
+        all: unset;
+        font-family: 'roboto', sans-serif;
+        background-image: url(copilot\ real1.png);
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 170vh;
+    }
+    .logo{
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .head{
+        all: unset;
+        font-size: 18px;
+        margin-top: 5%;
+        font-size: 16px;
+        color: #fff;
+    }
+    .head h1{
+        all: unset;
+        font-size: 1.5rem;
+        margin-left: 35vw;
+    }
+    .head h3{
+        font-size: 0.8rem;
+        margin-left: 23vw;
+        margin-top: 10px;
+        width: 70%;
+    }
+    .projects-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: -20px;
+        margin-top: -30px;
+        width: 110%;
+        row-gap: 30px;
+    }
+    .first-project{
+        width: 75%;
+        height: 100%;
+    }
+
+    .first-project :first-child{
+    display: block;
+    width: 99%;
+    height: 30%;
+    margin-left: -21px;
+    padding-top: 20px;
+}
+.first-project :nth-child(2){
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.first-project :nth-child(3){
+    display: inline-block;
+    width: 130px;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.first-project :nth-child(4){
+    display: block;
+    width: 93%;
+    height: 20%;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.foodi-1{
+    margin-left: 26px;
+    margin-top: 20px;
+    padding-top: 0px;
+    background-color: rgb(43,0,61);
+    color: #fff;
+    width: 85%;
+    height: 60px;
+    border-radius: 10px;
+}
+.foodi-1 h3{
+    all: unset;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.foodi-1-text{
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: -30px;
+}
+.second-project{
+    background-color: rgb(72,11,95);
+    width: 75%;
+    height: 100%;
+    margin-left: 60px;
+}
+.second-project-content :first-child{
+    display: block;
+    width: 290px;
+    height: 130px;
+    margin-left: -5px;
+    padding-top: 1px;
+}
+.second-project-content :nth-child(2){
+    display: block;
+    width: 290px;
+    height: 130px;
+    margin-left: -5px;
+    padding-top: 1px;
+}
+
+.second-project-content{
+    display: grid;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.second-project-title{
+    margin-left: -3px;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: rgb(43,0,61);
+    color: #fff;
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+}
+.second-project-title h3{
+    all: unset;
+    font-size: 13px;
+}
+.second-project-text{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+.third-project{
+    background-color: rgb(72,11,95);
+    width: 75%;
+    height: 100%;
+    margin-left: 60px;
+    
+}
+.third-project-content{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.third-project-images{
+    all: unset;
+    display: grid;
+    row-gap: 20px;
+}
+.t-wrap{
+    display: flex;
+    column-gap: 20px;
+    padding-left: 0px;
+  
+    
+}
+.t-wrap :nth-child(1){
+    display: block !important;
+    width: 130px !important;
+    height: 70px !important;
+    background-color: transparent;
+
+}
+.t-wrap :nth-child(2){
+    display: block;
+    width: 120px;
+    height: 70px;   
+}
+.third-project-images :first-child{
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-left: 5px;
+    padding-top: 1px  
+}
+.third-project-images :nth-child(3){
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    margin-left: 5px;
+    padding-top: 0px;
+}
+.third-project-title{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: rgb(43,0,61);
+    color: #fff;
+    width: 87%;
+    height: 60px;
+    border-radius: 10px;   
+}
+.third-project-title h3{
+    all: unset;
+    font-size: 12px;
+    margin-left: -3px;
+}
+.third-project-text{
+    padding-right: 10px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.fourth-project{
+    background-color: rgb(72,11,95);
+    width: 75%;
+    height: 100%;  
+    margin-left: 60px;
+}
+.fourth-project-content{
+    padding-left: 5px;
+    padding-top: 20px;
+}
+.fourth-project-images{
+    display: grid;
+    row-gap: 20px;
+}
+.f1{
+    display: flex;
+    width: 280px;
+    height: 140px;
+    margin-left: 16px;   
+}
+.tt-wrap, .tt-wrap2{
+    display: flex;
+    padding-left: 0px;
+    column-gap: 10px;
+}
+.t1{
+    display: flex;
+    width: 140px;
+    height: 80px;   
+    margin-left: 16px;
+}
+.t2{
+    display: flex;
+    width: 130px;
+    height: 80px;   
+}
+.t3{
+    display: flex;
+    width: 140px;
+    height: 80px;   
+    margin-top: 100px;
+    margin-left: -290px;
+}
+.t4{
+    display: flex;
+    width: 130px;
+    height: 80px;   
+    margin-top: 100px;
+
+}
+.tt-wrap2{
+    margin-top: 0px;
+}
+.tt1{
+    display: flex;
+    width: 140px;
+    height: 80px;
+    margin-left: 16px;   
+}
+.tt2{
+    display: flex;
+    width: 130px;
+    height: 80px;   
+}
+.tt3{
+    display: flex;
+    width: 140px;
+    height: 80px;   
+    margin-top: 100px;
+    margin-left: -290px;
+}
+.tt4{
+    display: flex;
+    width: 130px;
+    height: 80px;   
+    margin-top: 100px;
+
+}
+.tt-last{
+    display: block;
+    width: 280px;
+    height: 100px;
+    margin-left: 16px; 
+}
+.fourth-project-title{
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgb(43,0,61);
+    color: #fff;
+    width: 270px;
+    height: 60px;
+    border-radius: 10px;   
+}
+.fourth-project-title h3{
+    all: unset;
+    font-size: 12px;
+    margin-left: -3px;
+}
+.fourth-project-text{
+    text-align: center;
+    padding-right: 0px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    }
+
+}
