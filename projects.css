@@ -13,6 +13,9 @@ body {
     overflow-x: hidden;
     background-image: url("proj.png");
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 .logo{
     margin-left: 85px;
