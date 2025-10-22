@@ -11,7 +11,7 @@
 body {
     font-family: 'roboto', sans-serif;
     overflow-x: hidden;
-    background-image: url(copilot\ real1.png);
+    background-image: url("copilot\ real1.png");
 }
 .logo{
     margin-left: 85px;
