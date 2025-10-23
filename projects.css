@@ -302,7 +302,7 @@ body {
     body{
         all: unset;
         font-family: 'roboto', sans-serif;
-        background-image: url(copilot\ real1.png);
+        background-image: url("proj.png");
         overflow-x: hidden;
         position: relative;
         width: 100%;

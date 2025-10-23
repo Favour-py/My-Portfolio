@@ -164,7 +164,7 @@ nav{
 /* about section */
 
 .about-section{
-    background-image: url(Copilot\ real1.png);
+    background-image: url("proj.png");
     background-size: cover;
     width: 100vw;
     height: 145vh;
