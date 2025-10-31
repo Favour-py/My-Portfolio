@@ -1045,7 +1045,7 @@ footer{
     background-color: transparent;
     color: rgb(215, 167, 222);
 }
-.f-name input::placeholder,.f-email input::placeholder,.f-message textarea{
+.f-name input::placeholder,.f-email input::placeholder,.f-message textarea::placeholder{
     color: rgb(215, 167, 222);
     padding-left: 15px;
 }

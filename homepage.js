@@ -547,22 +547,114 @@ navContact.addEventListener("click", function (e) {
 
 // email service
 
-emailjs.init("nteYjWFSLikAuFoNR")
+emailjs.init("nteYjWFSLikAuFoNR");
 
-document.getElementsByClassName("formm")[0].addEventListener("submit", function(e){
+(function () {
+  const form = document.getElementsByClassName("formm")[0];
+  const status = document.getElementById("status");
+
+  if (!form) {
+    console.error("Form with class .formm not found.");
+    return;
+  }
+  if (!status) {
+    console.warn("#status element not found — messages will not be shown to the user.");
+  }
+
+  function setStatus(msg, color) {
+    if (status) {
+      status.innerText = msg;
+      status.style.color = color || "black";
+    } else {
+      // fallback: alert (avoid using alert in production, it's here only if #status missing)
+      console.log(msg);
+    }
+  }
+
+  function isValidEmail(email) {
+    // simple, widely used email regex (sufficient for basic validation)
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function findEmailField(formEl) {
+    // prefer input[type="email"]
+    let emailInput = formEl.querySelector('input[type="email"]');
+    if (emailInput) return emailInput;
+    // fallback: any input or textarea with name containing "email"
+    const byName = formEl.querySelector('input[name*="email"], textarea[name*="email"]');
+    if (byName) return byName;
+    // no email field found
+    return null;
+  }
+
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-emailjs.sendForm("favour", "template_u3sv7od", this).then(() => {
-    
-    
-    document.getElementById("status").innerText = "Message sent Successfully"
-    this.reset()
-}, (error) => {
-    
-    document.getElementsByClassName("formm")[0].innerText = "failed to send"
-    console.error(error)
-    })
-})
+    try {
+      // collect all inputs and textareas that have a name attribute (these will be sent by emailjs)
+      const fields = Array.from(this.querySelectorAll('input[name], textarea[name], select[name]'));
+
+      // if no named fields found, we cannot validate — block sending to be safe
+      if (fields.length === 0) {
+        setStatus("Form fields not found. Cannot send.", "red");
+        console.error("No named inputs/textareas/selects inside the form were found.");
+        return;
+      }
+
+      // Trim values and check emptiness
+      const emptyFields = fields.filter(f => {
+        const val = (f.value || "").toString().trim();
+        return val === "";
+      });
+
+      if (emptyFields.length > 0) {
+        // Optionally list missing field names (if named)
+        const names = emptyFields.map(f => f.name || f.getAttribute("id") || "unnamed").join(", ");
+        setStatus("Please fill in all fields before sending. Missing: " + names, "red");
+        return;
+      }
+
+      // Validate email specifically
+      const emailField = findEmailField(this);
+      if (!emailField) {
+        setStatus("No email field found in the form. Please include an input with name or type 'email'.", "red");
+        console.error("No email input found in the form.");
+        return;
+      }
+
+      const emailVal = (emailField.value || "").trim();
+      if (!isValidEmail(emailVal)) {
+        setStatus("Please enter a valid email address.", "red");
+        emailField.focus && emailField.focus();
+        return;
+      }
+
+      // Optional: show sending state
+      setStatus("Sending...", "blue");
+
+      // All validation passed — send with emailjs (using the same call you used originally)
+      emailjs.sendForm("favour", "template_u3sv7od", this).then(
+  () => {
+    setStatus("✅ Message sent Successfully", "green");
+    this.reset();
+
+    // ⏳ Make message disappear after 5 seconds
+    setTimeout(() => {
+      setStatus(""); // clears the text
+    }, 5000);
+  },
+  (error) => {
+    setStatus("❌ Failed to send. Please try again later.", "red");
+    console.error("emailjs.sendForm error:", error);
+  }
+);
+
+    } catch (err) {
+      setStatus("An unexpected error occurred. Check console for details.", "red");
+      console.error(err);
+    }
+  });
+})();
 
 
 let barIcon = document.querySelector(".bar")
