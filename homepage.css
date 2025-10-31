@@ -13,7 +13,7 @@ body {
 }
 
 header{
-    background-image: url("bgggg.png");
+    background-image: url("bgggg.webp");
     background-size: cover;
     width: 100vw;
     height: 120vh;
@@ -167,7 +167,7 @@ nav{
 /* about section */
 
 .about-section{
-    background-image: url("proj.png");
+    background-image: url("proj.webp");
     background-size: cover;
     width: 100%;
     max-width: 100%;
@@ -363,7 +363,7 @@ nav{
 /* service section */
 
 .services-section{
-    background-image: url(Copilot\ real2.png);
+    background-image: url(Copilot\ real2.webp);
     background-size: cover;
     width: 100vw;
     height: 110vh;
@@ -468,7 +468,7 @@ nav{
 /* project section */
 
 .project-section{
-    background-image: url(Copilot\ real3.png);
+    background-image: url(Copilot\ real3.webp);
     background-size: cover;
     width: 100vw;
     height: 120vh;
@@ -494,7 +494,7 @@ nav{
     position: absolute;
     bottom: -20px;
     left: 20px;
-    background-image: url(copilot\ real3.png);
+    background-image: url(Copilot\ real3.webp);
     width: 75vw;
     /* height: 70vh; */
     overflow-y: scroll;
@@ -536,7 +536,7 @@ nav{
     position: absolute;
     top: 320px;
     left: 200px;
-    background-image: url(copilot\ real3.png);
+    background-image: url(Copilot\ real3.webp);
     width: 75vw;
     /* height: 70vh; */
     overflow-y: scroll;
@@ -576,7 +576,7 @@ nav{
     position: absolute;
     top: 320px;
     left: 250px;
-    background-image: url(copilot\ real3.png);
+    background-image: url(Copilot\ real3.webp);
     width: 75vw;
     /* height: 70vh; */
     overflow-y: scroll;
@@ -881,7 +881,7 @@ nav{
 /* reviews section */
 
 .review-section{
-    background-image: url(Copilot\ real3.png);
+    background-image: url(Copilot\ real3.webp);
     background-size: cover;
     width: 100vw;
     height: 150vh;
@@ -956,7 +956,7 @@ nav{
 /* footer section */
 
 footer{
-    background-image: url(copilot\ real4.png);
+    background-image: url(copilot\ real4.webp);
     background-size: cover;
     width: 100vw;
     height: 150vh;

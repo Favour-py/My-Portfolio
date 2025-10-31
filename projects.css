@@ -11,7 +11,7 @@
 body {
     font-family: 'roboto', sans-serif;
     overflow-x: hidden;
-    background-image: url("proj.png");
+    background-image: url("proj.webp");
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -302,7 +302,7 @@ body {
     body{
         all: unset;
         font-family: 'roboto', sans-serif;
-        background-image: url("proj.png");
+        background-image: url("proj.webp");
         overflow-x: hidden;
         position: relative;
         width: 100%;
